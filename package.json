@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "build:docs": "parcel build -d docs index.html",
+    "build:docs": "rm -rf docs && parcel build -d docs --public-url ./ index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
